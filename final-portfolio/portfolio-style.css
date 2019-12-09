@@ -1,0 +1,172 @@
+/*******************/
+/* GENERIC STYLING */
+/*******************/
+:root {
+	/* commodore 64 */
+	--cBlack: #000000;
+	--cDarkGrey: #5b5b5b;
+	--cLightGrey: #8e8e8e;
+	--cSilver: #cacaca;
+	--cWhite: #ffffff;
+	--cPurple: #cc59c6;
+	--cBlue: #4137cd;
+	--cLightBlue: #75a1ec;
+	--cCyan: #83f0dc;
+	--cGreen: #59cd36;
+	--cYellow: #f7ee59;
+	--cOrange: #d17f30;
+	--cBrown: #915f33;
+	--cPink: #f99b97;
+	--cRed: #be3535;
+	
+	/* ammo */
+	--aBlack: #040c06;
+	--aDarkLow: #112318;
+	--aDarkHigh: #1e3a29;
+	--aMidLow: #305d42;
+	--aMidHigh: #4d8061;
+	--aBrightLow: #89a257;
+	--aBrightHigh: #bedc7f;
+	--aWhite: #eeffcc;
+	
+	
+}
+
+*{ /* set up */
+	
+	color: var(--aBrightHigh);
+	font-family: "Lucida Console", sans-serif;
+	box-sizing: border-box;
+	line-height: 32px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* universal traits */
+
+body {
+	position: relative;
+	background-color: var(--aBlack);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+pre {tab-size: 4;}
+
+/* home specific */
+#header-panel {
+	position: relative;
+	width: 90%;
+	top: 10px;
+	left: 10px;
+}
+
+#nav-panel {
+	position: relative;
+	float: left;
+	width: 145px;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+#focus-panel {
+	position: relative;
+	width: 80%;
+	top: 10px;
+	left: 20px;
+}
+
+#contents-panel {
+	position: relative;
+	width: 80%;
+	top: 20px;
+	left: 10px;
+}
+
+#footer-panel {
+	position: relative;
+	width: 90%;
+	top: 30px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
+
+#home img {
+	height: 64px;
+	width: 64px;
+}
+
+
+#focus-table {
+	border-color: var(--aBrightHigh);
+	border-style: dashed;
+	border-width: 3px;
+}
+
+#focus-table td {
+	border-color: var(--aBrightHigh); 
+	border-style: none;
+	border-width: 0;
+	
+	vertical-align: top;
+}
+
+#contents-table {
+	border-color: var(--aBrightHigh);
+	border-style: none;
+	border-width: 0;
+	text-align: left;
+}
+
+#contents-table th, td {
+	border-color: var(--aBrightHigh);
+	border-style: dashed;
+	border-width: 3px;
+	
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: top;
+}
+
+#footer-table {
+	border-style: none;
+	border-width: 0;
+	text-align: center;
+}
+
+#footer-table td {
+	border-style: none;
+	border-width: 0;
+	padding-top: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	vertical-align: top;
+}
+
+/* article traits */
+#text-panel {
+	position: relative;
+	width: 80%;
+	top: 0;
+	left: 10px;
+}
+#text-panel img {
+	border-color: var(--aBrightHigh);
+	border-style: dashed;
+	border-width: 3px;
+}
+
+.sprite img {
+	border-style: none;
+	border-width: 0;
+	
+}
